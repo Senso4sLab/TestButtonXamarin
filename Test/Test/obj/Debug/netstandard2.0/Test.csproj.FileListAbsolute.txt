@@ -1,0 +1,14 @@
+C:\Users\samos\source\repos\Test\Test\Test\bin\Debug\netstandard2.0\Test.deps.json
+C:\Users\samos\source\repos\Test\Test\Test\bin\Debug\netstandard2.0\Test.dll
+C:\Users\samos\source\repos\Test\Test\Test\bin\Debug\netstandard2.0\ref\Test.dll
+C:\Users\samos\source\repos\Test\Test\Test\bin\Debug\netstandard2.0\Test.pdb
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.csprojAssemblyReference.cache
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.AssemblyInfoInputs.cache
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.AssemblyInfo.cs
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.dll
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\ref\Test.dll
+C:\Users\samos\source\repos\Test\Test\Test\obj\Debug\netstandard2.0\Test.pdb

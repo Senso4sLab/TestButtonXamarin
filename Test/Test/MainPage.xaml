@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:Vm ="clr-namespace:Test.ViewModels"
+             xmlns:Vm ="clr-namespace:Test.ViewModels" xmlns:test="clr-namespace:Test"
              x:Class="Test.MainPage">
 
-    <CollectionView ItemsSource="{Binding Items}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SelectionMode="None" Background="Blue">
+    <CollectionView x:Name="collectionView" ItemsSource="{Binding Items}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SelectionMode="Single" Background="Blue">
         <CollectionView.ItemsLayout>
             <LinearItemsLayout Orientation="Vertical" ItemSpacing="5"/>
         </CollectionView.ItemsLayout>
@@ -17,7 +17,7 @@
                         <Label Text="{Binding Name}" TextColor="Black"/>
                         <Label Text="{Binding Description}" TextColor="Black"/>
 
-                        <Button  Margin="5,0,5,0" CornerRadius="10"  HeightRequest="37" BorderColor="Black" BorderWidth="1"  Text="New Cylinder Setup"  TextColor="Black" FontSize="12" 
+                        <test:CustomButton  IsEnableButton="{Binding IsButtonVisible}"  Margin="5,0,5,0" CornerRadius="10"  HeightRequest="37" BorderColor="Black" BorderWidth="1"  Text="New Cylinder Setup"  TextColor="Black" FontSize="12" 
                                                     BackgroundColor="White" Command="{Binding Source={RelativeSource AncestorType={x:Type Vm:MainViewModel}}, Path=BleCommand}" CommandParameter="{Binding .}" />
                     </StackLayout>
 

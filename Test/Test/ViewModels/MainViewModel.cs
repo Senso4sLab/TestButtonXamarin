@@ -35,23 +35,24 @@ namespace Test.ViewModels
 
             }) ;
 
-            BleCommand = new Command<Item>((item)=>
+            BleCommand = new Command<CollectionView>((item)=>
             {
-                App.Current.MainPage.DisplayAlert("Alert", $"The property IsButtonVisible for this {item.Name} Button  is set to true", "OK");
+                
+                //App.Current.MainPage.DisplayAlert("Alert", $"The property IsButtonVisible for this {item.Name} Button  is set to true", "OK");
             });
 
         }
 
         private void AddNewItem(object sender, ElapsedEventArgs e)
-        {            
-            
+        {
+
             Items.Add(new Item
             {
                 Name = $"name {random.Next(200)}",
                 Description = $"description {random.Next(200)}",
-                IsButtonVisible = random.Next(0, 1) == 0 ? false : true
+                IsButtonVisible = random.Next(0, 2) == 0 ? false : true
             });
-           
+
         }
     }
 }
