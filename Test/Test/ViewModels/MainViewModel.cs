@@ -35,11 +35,11 @@ namespace Test.ViewModels
 
             }) ;
 
-            BleCommand = new Command<CollectionView>((item)=>
+            BleCommand = new Command<Item>((item) =>
             {
-                
-                //App.Current.MainPage.DisplayAlert("Alert", $"The property IsButtonVisible for this {item.Name} Button  is set to true", "OK");
-            });
+
+                App.Current.MainPage.DisplayAlert("Alert", $"The property IsButtonVisible for this {item.Name} Button  is set to true", "OK");
+            }, (item) => item.IsButtonVisible);
 
         }
 

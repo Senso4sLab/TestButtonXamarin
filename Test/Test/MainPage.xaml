@@ -4,7 +4,7 @@
              xmlns:Vm ="clr-namespace:Test.ViewModels" xmlns:test="clr-namespace:Test"
              x:Class="Test.MainPage">
 
-    <CollectionView x:Name="collectionView" ItemsSource="{Binding Items}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SelectionMode="Single" Background="Blue">
+    <CollectionView x:Name="collectionView" ItemsSource="{Binding Items}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SelectionMode="None" Background="Blue">
         <CollectionView.ItemsLayout>
             <LinearItemsLayout Orientation="Vertical" ItemSpacing="5"/>
         </CollectionView.ItemsLayout>
@@ -18,7 +18,7 @@
                         <Label Text="{Binding Description}" TextColor="Black"/>
 
                         <test:CustomButton  IsEnableButton="{Binding IsButtonVisible}"  Margin="5,0,5,0" CornerRadius="10"  HeightRequest="37" BorderColor="Black" BorderWidth="1"  Text="New Cylinder Setup"  TextColor="Black" FontSize="12" 
-                                                    BackgroundColor="White" Command="{Binding Source={RelativeSource AncestorType={x:Type Vm:MainViewModel}}, Path=BleCommand}" CommandParameter="{Binding .}" />
+                                                     Command="{Binding Source={RelativeSource AncestorType={x:Type Vm:MainViewModel}}, Path=BleCommand}" CommandParameter="{Binding .}" />
                     </StackLayout>
 
                 </Frame>

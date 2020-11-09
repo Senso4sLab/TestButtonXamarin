@@ -17,19 +17,14 @@ namespace Test
             set { SetValue(IsEnableButtonProperty, value); }
         }
 
-        public CustomButton()
-        {
-            
-        }
-       
-
-
         static void OnEventNameChanged(BindableObject bindable, object oldValue, object newValue)
         {
             if(bindable is Button custtomButton)
             {
-                if(custtomButton.Command != null)
-                    (custtomButton.Command as Command).ChangeCanExecute();
+                var command = bindable.GetValue(CommandProperty) as ICommand;
+
+                if(command != null)
+                    (command as Command).ChangeCanExecute();
             }             
         }
     }
