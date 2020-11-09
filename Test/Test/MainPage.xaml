@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Vm ="clr-namespace:Test.ViewModels"
+             x:Class="Test.MainPage">
+
+    <CollectionView ItemsSource="{Binding Items}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" SelectionMode="None" Background="Blue">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="5"/>
+        </CollectionView.ItemsLayout>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate >
+                <Frame IsClippedToBounds="True"  Padding="5" HasShadow="True" CornerRadius="10" BorderColor="Black"  >
+
+                    <StackLayout>
+                        <Label Text="{Binding Name}" TextColor="Black"/>
+                        <Label Text="{Binding Description}" TextColor="Black"/>
+
+                        <Button  Margin="5,0,5,0" CornerRadius="10"  HeightRequest="37" BorderColor="Black" BorderWidth="1"  Text="New Cylinder Setup"  TextColor="Black" FontSize="12" 
+                                                    BackgroundColor="White" Command="{Binding Source={RelativeSource AncestorType={x:Type Vm:MainViewModel}}, Path=BleCommand}" CommandParameter="{Binding .}" />
+                    </StackLayout>
+
+                </Frame>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>
